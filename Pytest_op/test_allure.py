@@ -5,6 +5,12 @@ import allure
 class TestLogin:
     @allure.story("登录成功")
     def test_login_success(self):
+        with allure.step("步骤1：打开应用"):
+            print("打开应用")
+        with allure.step("步骤2：进入登录页面"):
+            print("登录页面")
+        with allure.step("步骤3：输入账号密码"):
+            print("输入账号密码")
         print("这是登录：测试用例， 登录成功")
         pass
 
