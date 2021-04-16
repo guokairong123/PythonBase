@@ -3,6 +3,7 @@ import allure
 
 @allure.feature("登录模块")
 class TestLogin:
+    @allure.title("登录成功")
     @allure.story("登录成功")
     def test_login_success(self):
         with allure.step("步骤1：打开应用"):
